@@ -41,13 +41,17 @@ body {
     font-weight: 700;
     text-align: right;
     line-height: .9;
-    margin-left: 2rem;
+    margin-left: 1rem;
     letter-spacing: 1px;
+}
+
+.header .info-bar a:hover {
+    color: #CE4A33;
 }
 
 .navbar {
     max-width: 1200px;
-    margin-right: 1rem;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -222,13 +226,16 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+    display: inline-block;
+    transition: all .1s ease-in-out;
 }
 
-.hero li:hover {
+.hero a:hover {
     scale: 1.05;
+    background-color: #832f20;
 }
 
-.hero li:active {
+.hero a:active {
     scale: .95;
 }
 
@@ -257,6 +264,95 @@ body {
 }
 
 /* AMENITIES SECTION */
+
+.amenities {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #CE4A33;
+}
+
+.amenities header {
+    color: white;
+    margin: 2rem;
+}
+
+.amenities header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+}
+
+.amenities header p {
+    font-size: 1.5rem;
+}
+
+.amenities .container1 {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.amenities .container2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.amenities .container1 .amenities-group {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    color:#CE4A33;
+    border-radius: 5px;
+}
+
+.amenities .container1 .amenities-group i {
+    font-size: 5rem;
+}
+
+.amenities .container1 .amenities-group h3 {
+    margin: 1rem 0;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+.amenities .container2 .amenities-group {
+    margin: 1rem;
+    padding: 2rem;
+    background-color: white;
+    color: #CE4A33;
+    border-radius: 5px;
+}
+
+.amenities .container2 .amenities-group i {
+    font-size: 5rem;
+}
+
+.amenities .container2 .amenities-group h3 {
+    margin: 1rem 0;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* AMENITIES RESPONSIVE DESIGN */
+
+@media (min-width:650px) {
+    .amenities .container1 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .amenities .container2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 /* ABOUT SECTION */
 
