@@ -209,7 +209,7 @@ body {
 .hero h1 {
     font-size: 7rem;
     padding: 1rem 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.15);
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
