@@ -286,12 +286,14 @@ body {
     padding: 1.5rem;
     text-align: center;
     background-color: #CE4A33;
+    background-image: url(backgrounds/topo-lines.svg);
+    background-size: cover;
     place-items: center;
 }
 
 .amenities header {
     color: white;
-    margin: 2rem;
+    margin: 4rem 0;
 }
 
 .amenities header h2 {
@@ -337,7 +339,7 @@ body {
 }
 
 .amenities .book-btn-inv {
-    margin: 2rem 0;
+    margin: 4rem 0;
 }
 
 /* AMENITIES RESPONSIVE DESIGN */
@@ -357,10 +359,11 @@ body {
 
 /* TRANSITION SECTION */
 
-.transition {
+/* .transition {
     background-image: url(images/camper-sun.jpg);
     background-size: cover;
-    height: 50vh;
+    background-position: center;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,15 +372,25 @@ body {
 
 .transition h2 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 12vw;
+    font-size: 5rem;
     color: white;
     text-align: center;
-    margin: 5rem;
     text-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.2);
 
-}
+} */
 
 /* ABOUT SECTION */
+
+.about .container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.about .image img {
+    width: 50%;
+    height: auto;
+}
 
 /* BOOK ONLINE SECTION */
 
