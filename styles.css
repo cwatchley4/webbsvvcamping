@@ -15,6 +15,45 @@ body {
     color: #CE4A33;
 }
 
+.book-btn {
+    background-color: #CE4A33;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .1s ease-in-out;
+}
+
+.book-btn:hover, .book-btn:active {
+    background-color: #832f20;
+}
+
+.book-btn-inv {
+    background-color: white;
+    color: #CE4A33;
+    padding: .5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: all .1s ease-in-out;
+}
+
+.book-btn-inv:hover {
+    transform: translate(0, -10px)
+}
+
 /* Header Below */
 
 .header {
@@ -215,30 +254,6 @@ body {
     letter-spacing: 2px;
 }
 
-.hero a {
-    background-color: #CE4A33;
-    color: white;
-    padding: .5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    display: inline-block;
-    transition: all .1s ease-in-out;
-}
-
-.hero a:hover {
-    scale: 1.05;
-    background-color: #832f20;
-}
-
-.hero a:active {
-    scale: .95;
-}
-
 /* RESPONSIVE HERO */
 
 @media (max-width: 673px) {
@@ -258,7 +273,7 @@ body {
         font-size: 1rem;
         padding: 0 1rem;
     }
-    .hero li a {
+    .hero .book-btn {
         font-size: 1rem;
     }
 }
@@ -306,6 +321,7 @@ body {
 
 .amenities .container .amenities-group:hover {
     box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.2);
+    transform: translate(0, -10px)
 }
 
 .amenities .container .amenities-group i {
@@ -318,6 +334,10 @@ body {
     font-size: 2rem;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 1px;
+}
+
+.amenities .book-btn-inv {
+    margin: 2rem 0;
 }
 
 /* AMENITIES RESPONSIVE DESIGN */
@@ -333,6 +353,28 @@ body {
     .amenities .container {
         grid-template-columns: minmax(250px, 400px) minmax(250px, 400px) minmax(250px, 400px) minmax(250px, 400px);
     }
+}
+
+/* TRANSITION SECTION */
+
+.transition {
+    background-image: url(images/camper-sun.jpg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.transition h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 12vw;
+    color: white;
+    text-align: center;
+    margin: 5rem;
+    text-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.2);
+
 }
 
 /* ABOUT SECTION */
