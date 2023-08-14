@@ -30,8 +30,12 @@ body {
     transition: all .1s ease-in-out;
 }
 
-.book-btn:hover, .book-btn:active {
-    background-color: #832f20;
+.book-btn:hover {
+    transform: translate(0, -10px);
+}
+
+.book-btn:active {
+    transform: translate(0, -10px) scale(.95);
 }
 
 .book-btn-inv {
@@ -51,7 +55,11 @@ body {
 }
 
 .book-btn-inv:hover {
-    transform: translate(0, -10px)
+    transform: translate(0, -10px);
+}
+
+.book-btn-inv:active {
+    transform: translate(0, -10px) scale(.95);
 }
 
 /* Header Below */
@@ -381,18 +389,174 @@ body {
 
 /* ABOUT SECTION */
 
-.about .container {
-    display: flex;
-    margin: auto;
-    justify-content: center;
+.about {
+    padding: 1rem;
 }
 
-.about .image img {
-    width: 50%;
-    height: auto;
+.about header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CE4A33;
+    margin: 2rem 0;
+}
+
+.about header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.about header hr {
+    margin: 1rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container .text {
+    padding: 1rem;
+    color: #CE4A33;
+    background-color: #f6f4f4;
+    border-radius: 5px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.about .container .text h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about .container .text p {
+    font-size: 1.25rem;
+}
+
+.about .container .image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.about .container .image img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+/* ABOUT RESPONSIVE DESIGN */
+
+@media (min-width: 865px) {
+    .about .container {
+        flex-direction: row;
+    }
+    .about .container .image {
+        margin-bottom: 0;
+    }
+    .about .container .text {
+        text-align: left;
+    }
 }
 
 /* BOOK ONLINE SECTION */
+
+.book-online {
+    padding: 1rem;
+}
+
+.book-online header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CE4A33;
+    margin: 1rem 0;
+}
+
+.book-online header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.book-online header hr {
+    margin: 2rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+.book-online .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-online .container .text {
+    padding: 1rem;
+    color: #CE4A33;
+    background-color: #f6f4f4;
+    border-radius: 5px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.book-online .container .text h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.book-online .container .text p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.book-online .container .image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.book-online .container .image img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+/* BOOK ONLINE RESPONSIVE DESIGN */
+
+@media (min-width: 865px) {
+    .book-online .container {
+        flex-direction: row-reverse;
+    }
+    .book-online .container .image {
+        margin-bottom: 0;
+    }
+    .book-online .container .text {
+        text-align: right;
+    }
+}
 
 /* FOOTER SECTION */
 
