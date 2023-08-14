@@ -592,9 +592,6 @@ body {
     margin: auto;
     justify-content: center;
     align-items: center;
-}
-
-.rates .rates-table {
     overflow-x: scroll;
 }
 
