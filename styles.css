@@ -160,7 +160,7 @@ body {
     display: none;
     position: absolute;
     right: 2rem;
-    top: 100px;
+    top: 120px;
     height: 0;
     width: 300px;
     background: #CE4A33;
@@ -171,7 +171,7 @@ body {
 }
 
 .dropdown-menu.open {
-    height: 207px;
+    height: 167.5px;
     z-index: 1;
 }
 
@@ -472,13 +472,13 @@ body {
     }
 }
 
-/* BOOK ONLINE SECTION */
+/* SITE MAP SECTION */
 
-.book-online {
+.site-map {
     padding: 1rem;
 }
 
-.book-online header {
+.site-map header {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -487,20 +487,20 @@ body {
     margin: 1rem 0;
 }
 
-.book-online header h2 {
+.site-map header h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
     letter-spacing: 1px;
 }
 
-.book-online header hr {
+.site-map header hr {
     margin: 2rem 0;
     width: 8rem;
     border: 3px solid #CE4A33;
     border-radius: 5px;
 }
 
-.book-online .container {
+.site-map .container {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -508,7 +508,7 @@ body {
     align-items: center;
 }
 
-.book-online .container .text {
+.site-map .container .text {
     padding: 1rem;
     color: #CE4A33;
     background-color: #f6f4f4;
@@ -517,18 +517,18 @@ body {
     text-align: center;
 }
 
-.book-online .container .text h2 {
+.site-map .container .text h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.book-online .container .text p {
+.site-map .container .text p {
     font-size: 1.25rem;
     margin: 1rem 0;
 }
 
-.book-online .container .image {
+.site-map .container .image {
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -537,26 +537,80 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.book-online .container .image img {
+.site-map .container .image img {
     object-fit: cover;
     width: 90%;
     height: 90%;
     border-radius: 5px;
 }
 
-/* BOOK ONLINE RESPONSIVE DESIGN */
+/* SITE MAP RESPONSIVE DESIGN */
 
 @media (min-width: 865px) {
-    .book-online .container {
+    .site-map .container {
         flex-direction: row-reverse;
     }
-    .book-online .container .image {
+    .site-map .container .image {
         margin-bottom: 0;
     }
-    .book-online .container .text {
+    .site-map .container .text {
         text-align: right;
     }
 }
+
+/* RATES SECTION */
+
+.rates {
+    padding: 1rem;
+}
+
+.rates header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #CE4A33;
+    margin: 1rem 0;
+}
+
+.rates header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.rates header hr {
+    margin: 2rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+.rates .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.rates .rates-table {
+    overflow-x: scroll;
+}
+
+.rates .rates-table th {
+    padding: 1rem;
+}
+
+.rates .rates-table td {
+    text-align: center;
+    padding: 1rem;
+}
+
+.rates .rates-table tr {
+    background-color: #f6f4f4;
+}
+
 
 /* FOOTER SECTION */
 
@@ -657,7 +711,6 @@ footer .container .row .footer-col h4 {
         padding: 1rem;
     }
 }
-
 
 /* CONTACT PAGE BELOW */
 
