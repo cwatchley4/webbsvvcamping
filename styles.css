@@ -143,6 +143,7 @@ body {
 
 .navbar .links a {
     position: relative;
+    font-size: 1.2rem;
 }
 
 .navbar .links a:hover {
@@ -196,7 +197,7 @@ body {
 
 /* RESPONSIVE NAV */
 
-@media (max-width: 995px) {
+@media (max-width: 1050px) {
     .navbar .links {
         display: none;
         color: #CE4A33;
