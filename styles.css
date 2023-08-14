@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -251,6 +252,7 @@ body {
     font-size: 1.5rem;
     padding: 0 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
+    color: white;
 }
 
 .hero h1 {
@@ -260,6 +262,7 @@ body {
     text-transform: uppercase;
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
+    color: white;
 }
 
 /* RESPONSIVE HERO */
@@ -609,11 +612,112 @@ body {
     background-color: #f6f4f4;
 }
 
+/* CONTACT SECTION */
+
+.contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: #CE4A33;
+}
+
+.contact header hr {
+    margin: 2rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+.contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.contact .contact-form-container {
+    background-color:#CE4A33;
+    padding: 4rem;
+    margin: 1rem auto 2rem auto;
+    max-width: 50rem;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: .3s ease-in-out;
+}
+
+.contact .contact-form-container:hover {
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.15);
+}
+
+.contact .contact-form-container .contact-form {
+    display: block;
+}
+
+.contact .contact-form-container .contact-form .contact-form-field {
+    margin-bottom: 2rem;
+}
+
+.contact .contact-form-container .contact-form .contact-form-field .contact-form-label {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+}
+
+.contact .contact-form-container .contact-form .contact-form-field .contact-form-input {
+    color: white;
+    padding: 1.5rem;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 1rem;
+    letter-spacing: 0;
+    background: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* CONTACT SECTION RESPONSIVE DESIGN */
+
+@media (max-width: 1133px) {
+    .contact .container {
+        flex-direction: column;
+    }
+    .contact .container .contact-form {
+        min-width: 300px;
+        justify-content: center;
+    }
+    .contact .container .contact-info {
+        min-width: 300px;
+        justify-content: center;
+    }
+}
 
 /* FOOTER SECTION */
 
 footer {
-    background-color: #F0F0F0;
+    background-color: #CE4A33;
     padding: 2rem 2rem;
 }
 
@@ -624,8 +728,7 @@ footer .container {
 
 footer .container .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 footer .container .row .footer-col {
@@ -635,21 +738,11 @@ footer .container .row .footer-col {
 
 footer .container .row .footer-col h4 {
     font-size: 1.1rem;
-    font-weight: 700;
-    color: #265023;
+    color: white;
     margin-bottom: 1rem;
     position: relative;
-}
-
-.footer-col h4::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -.5rem;
-    background-color: #265023;
-    height: 2px;
-    box-sizing: border-box;
-    width: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
 }
 
 .footer-col ul {
@@ -663,14 +756,14 @@ footer .container .row .footer-col h4 {
 .footer-col ul li a {
     font-size: 1rem;
     text-transform: capitalize;
-    color: #53AE4D;
+    color: white;
     font-weight: 500;
     display: block;
     transition: .3s ease;
 }
 
 .footer-col ul li a:hover {
-    color: #265023;
+    color: #ff7f68;
 }
 
 .footer-col .social-links {
@@ -679,7 +772,7 @@ footer .container .row .footer-col h4 {
 }
 
 .footer-col .social-links i {
-    color: #53AE4D;
+    color: white;
     font-size: 2rem;
     margin: 0 .5rem .5rem;
     transition: .3s ease;
@@ -691,500 +784,34 @@ footer .container .row .footer-col h4 {
 }
 
 .footer-col .social-links i:hover {
-    color: #265023
+    color: #ff7f68;
 }
+
+footer .copyright {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .copyright a {
+    color: white;
+    font-weight: 700;
+    transition: .2s ease-in-out;
+}
+
+footer .copyright a:hover {
+    color: #ff7f68;
+}
+
 
 /* FOOTER RESONSIVE DESIGN */
 
-@media (max-width: 694px) {
-    footer .container .row .footer-col {
-        width: 50%;
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 427px) {
-    footer .container .row .footer-col {
-        width: 100%;
-        padding: 1rem;
-    }
-}
-
-/* CONTACT PAGE BELOW */
-
-/*CONTACT INFO BELOW*/
-
-.contact {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: calc(50vh - 80px);
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    color: white;
-    background-image: url(photos/old-house.jpg);
-    background-color: rgba(0, 0, 0, .3);
-    background-size: cover;
-    background-position: bottom;
-    background-blend-mode: darken;
-}
-
-.contact header h2 {
-    font-size: 4rem;
-    margin: 2rem 1rem .5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-}
-
-.contact header p {
-    font-size: 1.5rem;
-    margin: .5rem 1rem 2rem;
-    font-weight: 500;
-    text-align: center;
-}
-
-.contact .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-}
-
-.contact .container .contact-info {
-    width: 50%;
-    max-width: 450px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact .container .contact-info .box {
-    position: relative;
-    padding: 1rem 0;
-    display: flex;
-}
-
-.contact .container .contact-info .box .icon {
-    min-width: 60px;
-    height: 60px;
-    background: #53AE4D;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.5rem;
-}
-
-.contact .container .contact-info .box .text {
-    display: flex;
-    margin-left: 1rem;
-    font-size: 1rem;
-    flex-direction: column;
-    font-weight: 500;
-}
-
-.contact .container .contact-info .box h3 {
-    font-weight: 700;
-}
-
-.contact-form {
-    width: 50%;
-    max-width: 450px;
-    padding: 1.5rem;
-    background:#53AE4D;
-    border-radius: 15px;
-    color: white;
-}
-
-.contact-form h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: white;
-}
-
-.contact-form .input-box {
-    position: relative;
-    width: 100%;
-    margin-top: 0.5rem;
-}
-
-.contact-form .input-box input, textarea {
-    width: 100%;
-    padding: .25rem 0;
-    font-size: 1rem;
-    margin: .5rem 0;
-    border: none;
-    border-bottom: 2px solid;
-    outline: none;
-    background: #53AE4D;
-    color: white;
-    font-weight: 500;
-}
-
-.contact-form .input-box span {
-    position: absolute;
-    left: 0;
-    padding: .25rem 0;
-    font-size: 1rem;
-    margin: .5rem 0;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box input:valid ~ span,
-.contact-form .input-box textarea:focus ~ span,
-.contact-form .input-box textarea:valid ~ span {
-    font-size: .6rem;
-    transform: translateY(-15px);
-}
-
-.contact-form .input-box input[type="submit"] {
-    width: 100%;
-    background: white;
-    color: #53AE4D;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-/* CONTACT SECTION RESPONSIVE DESIGN */
-
-@media (max-width: 1133px) {
-    .contact .container {
+@media (max-width: 515px) {
+    footer .container .row {
         flex-direction: column;
+        text-align: center;
     }
-    .contact .container .contact-form {
-        margin-top: 2rem;
-        min-width: 300px;
-        justify-content: center;
+    footer .container .row .footer-col:first-child {
+        margin-bottom: 2rem;
     }
-    .contact .container .contact-info {
-        min-width: 300px;
-        justify-content: center;
-    }
-}
-
-/* NEW REQUEST SECTION */
-
-.request header {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100vw;
-    background-color: #53AE4D;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    margin: 4rem 0 1rem;
-}
-
-.request header h2 {
-    font-size: 2rem;
-    margin: 2rem 1rem .5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-}
-
-.request header p {
-    font-size: 1rem;
-    margin: .5rem 1rem 2rem;
-    font-weight: 500;
-    text-align: center;
-    color: white;
-}
-
-/* SERVICES PAGE BELOW */
-
-/* HERO SECTION */
-
-.services-hero {
-    height: calc(70vh - 80px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, .4);
-    background-image: url(photos/stripes.jpg);
-    background-size: cover;
-    background-blend-mode: darken;
-}
-
-/* .services-hero #bgvideo {
-    width: 100%;
-    height: calc(70vh);
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-} */
-
-.services-hero h1 {
-    font-size: 6rem;
-    padding: 1rem 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-.services-hero p {
-    font-size: 3rem;
-    padding: 0 3rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
-}
-
-.services-hero ul {
-    display: inline-block;
-}
-
-.services-hero li {
-    padding: 1rem;
-}
-
-.services-hero a {
-    background-color: #53ae4d;
-    color: white;
-    padding: .5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: scale .2 ease;
-}
-
-.services-hero a:hover {
-    background-color: #265023;
-    transition: .2s ease;
-}
-
-/* RESPONSIVE SERVICES HERO */
-
-@media (max-width: 428px) {
-    .services-hero h1 {
-        font-size: 3.5rem;
-    }
-    .services-hero p {
-        font-size: 1.25rem;
-    }
-}
-
-/* MOW TRIM CLEAN UP SECTION */
-
-.mowtrimcleanup {
-    width: 100%;
-    height: auto;
-    background-image: url(backgrounds/stripes-bg-green.jpg);
-    display: flex;
-    align-items: center;
-}
-
-.mowtrimcleanup .container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mowtrimcleanup .container .text {
-    width: 50%;
-    margin: 3rem 1.5rem 3rem 5rem;
-    color: white;
-}
-
-.mowtrimcleanup .container .text h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    font-weight: 800;
-}
-
-.mowtrimcleanup .container .text p {
-    font-size: 1rem;
-    line-height: 1.75rem;
-}
-
-.mowtrimcleanup .container img {
-    width: 50%;
-    margin: 3rem 5rem 3rem 1.5rem;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-/* MOW TRIM CLEAN UP RESPONSIVE DESIGN */
-
-@media (max-width: 965px) {
-    .mowtrimcleanup .container {
-        flex-direction: column;
-    }
-    .mowtrimcleanup .container img {
-        margin: 1.5rem 1rem 3rem;
-        width: 80%;
-    }
-    .mowtrimcleanup .container .text {
-        display: flex;
-        align-items: center;
-        width: 80%;
-        margin: 3rem 1rem 1.5rem;
-    }
-
-    .mowtrimcleanup .container .text p {
-        width: 50%;
-        align-self: center;
-        margin-left: 1rem;
-    }
-
-    .mowtrimcleanup .container .text h2 {
-        width: 50%;
-        align-self: center;
-        margin: 0 1rem 0 0 ;
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 714px) {
-    .mowtrimcleanup .container .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin: 1.5rem 1rem 1rem;
-    }
-    .mowtrimcleanup .container .text p {
-        width: 80%;
-        align-self: center;
-        margin: 0;
-    }
-    .mowtrimcleanup .container .text h2 {
-        width: 80%;
-        align-self: center;
-        font-size: 3rem;
-        margin: 0 0 1rem 0;
-    }
-}
-
-/* KEY SERVICES SECTION */
-
-.key-services header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.key-services header h2 {
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 800;
-    text-align: center;
-}
-
-.cards {
-    display: grid;
-    width: 80%;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.cards .card {
-    background-color: #53AE4D;
-    color: white;
-    padding: 2rem 2rem;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.cards .card h3 {
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    translate: 0 3rem;
-    transition: .2s ease-in-out;
-}
-
-.cards .card p {
-    translate: 0 300px;
-    transition: .2s ease-in-out;
-}
-
-.cards .card:hover > p {
-    translate: 0 0;
-}
-
-.cards .card:hover > h3 {
-    translate: 0 0;
-}
-
-/* ABOUT PAGE */
-
-/* ABOUT PAGE HERO DESIGN */
-
-.about-hero {
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(photos/mom-and-dad.jpg);
-    background-color: rgba(0, 0, 0, .5);
-    background-blend-mode: darken;
-    background-size: cover;
-    background-position: center;
-}
-
-.about-hero h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 800;
-    text-align: center;
-    width: 70%;
-    color: white;
-}
-
-/* INTRODUCTION SECTION DESIGN */
-
-.intro {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-}
-
-.intro header h2 {
-    font-size: 3rem;
-}
-
-.intro article {
-    max-width: 600px;
-    margin: 0 5rem;
-}
-
-.intro article p {
-    margin: 1rem 0;
 }
