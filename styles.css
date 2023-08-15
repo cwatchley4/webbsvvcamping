@@ -816,3 +816,33 @@ footer .copyright a:hover {
         margin-bottom: 2rem;
     }
 }
+
+/* RATES PAGE */
+
+.rates-hero {
+    background-image: url(images/sign.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: darken;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+.rates .container {
+    margin-top: 2rem;
+}
+
+.rates .container a {
+    margin-top: 2rem;
+}
