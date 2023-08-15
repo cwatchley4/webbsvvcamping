@@ -846,3 +846,85 @@ header h1 {
 .rates .container a {
     margin-top: 2rem;
 }
+
+/* CHECK IN / CHECK OUT SECTION */
+
+.check-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-in header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 2rem 0;
+    text-align: center;
+
+}
+
+.check-in header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    color: #CE4A33;
+    letter-spacing: 2px;
+}
+
+.check-in header hr {
+    margin: 2rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+.check-in .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 2rem 2rem ;
+    gap: 2rem;
+    color: #333;
+}
+
+.check-in .main-content h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+}
+
+.check-in .main-content li {
+    margin: .5rem 0;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1rem;
+}
+
+.check-in .main-content .arrivals-departures {
+    max-width: 500px;
+    background-color: #f6f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: .3s ease-in-out;
+}
+
+.check-in .main-content .refunds-cancellations {
+    max-width: 500px;
+    background-color: #f6f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: .3s ease-in-out;
+}
+
+
+/* CHECK IN / CHECK OUT SECTION RESPONSIVE DESIGN */
+
+@media (min-width: 870px) {
+    .check-in .main-content {
+        flex-direction: row;
+    }
+}
