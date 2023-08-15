@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webb's Valley View Campground</title>
+    <meta property="og:title" content="Webb's Valley View Campground | Rates and Reservations"/>
+    <meta property="og:image" content="https://i.ibb.co/c258Yk5/Webbs-Cover-Photo-v2.jpg"/>
+    <meta property="og:description" content="See our camping rates, look at our a map of our camping sites, and check on availability."/>
+    <meta property="og:url" content="https://www.webbsvvcamping.com/rates"/>
+    <meta property='og:image:width' content='1200'/>
+    <meta property='og:image:height' content='630'/>
+    <link rel="icon" type="image/svg+xml" sizes="any" href="logos/logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc134222d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="info-bar">
+            <!-- <a href="mailto:wvvcampground@gmail.com">wvvcampground@gmail.com</a> -->
+            <a href="tel: 3095189559">(309) 518-9559</a>
+            <a href="https://goo.gl/maps/mt6e81SftkbNDAvP8">Google Maps</a>
+        </div>
+        <hr>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logos/logo.svg" alt="Webb's Valley View Campground logo: a camper"/></a>
+                <a href="index.html">Webb's <br> Valley View <br> Campground</a>
+            </div>
+            <ul class="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="rates.html">Rates & Reservations</a></li>
+                <li><a href="sitemap.html">Site Map & Policies</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False" target="_blank">Book Online</a></li>
+            </ul>   
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="dropdown-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rates.html">Rates and Reservations</a></li>
+            <li><a href="sitemap.html">Site Map and Policies</a></li>
+            <li><a href="attractions.html">Attractions</a></li>
+            <li><a href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False" target="_blank">Book Online</a></li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn")
+        const toggleBtnIcon = document.querySelector(".toggle-btn i")
+        const dropDownMenu = document.querySelector(".dropdown-menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars"
+        }
+    </script>
+
+<!-- HERO SECTION -->
+
+<header class="attractions-hero">
+    <h1>Attractions</h1>
+</header>
+
+    <!-- FOOTER SECTION -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Webb's Valley View Campground</h4>
+                <ul>
+                    <li><a href="https://goo.gl/maps/mt6e81SftkbNDAvP8">18737 US 24, Lewistown IL 61542</a></li>
+                    <li><a href="tel:3095189559">(309) 518-9559</a></li>
+                    <li><a href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False" target="_blank">Book Online</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/webbsvvcamping" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">© Copyright 2023. Made by <a href="https://curtisatchley.com" target="_blank">Curtis Atchley</a>.</p>
+</footer>
+
+</body>

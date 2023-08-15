@@ -819,6 +819,8 @@ footer .copyright a:hover {
 
 /* RATES PAGE */
 
+/* RATES HERO SECTION */
+
 .rates-hero {
     background-image: url(images/sign.jpg);
     background-size: cover;
@@ -927,4 +929,54 @@ header h1 {
     .check-in .main-content {
         flex-direction: row;
     }
+}
+
+/* SITE MAP PAGE */
+
+/* SITE MAP HERO SECTION */
+
+.sitemap-hero {
+    background-image: url(images/fire-pit.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: darken;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+
+
+/* ATTRACTIONS PAGE */
+
+/* ATTRACTIONS HERO SECTION */
+
+.attractions-hero {
+    background-image: url(images/wheat.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: darken;
+    background-position: top;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
 }
