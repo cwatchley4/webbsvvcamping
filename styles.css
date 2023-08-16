@@ -936,26 +936,144 @@ header h1 {
 /* SITE MAP HERO SECTION */
 
 .sitemap-hero {
-    background-image: url(images/fire-pit.jpg);
+    /* background-image: url(images/site-map.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, .2);
     background-blend-mode: darken;
     background-position: center;
-    height: 40vh;
+    height: 50vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-header h1 {
-    color: white;
+.sitemap-hero h1 {
+    color: #CE4A33;
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
+    margin: 2rem 2rem 0;
     font-size: 5rem;
     letter-spacing: 5px;
 }
 
+.sitemap-hero hr {
+    margin: 2rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
 
+/* SITE MAP MAP SECTION */
+
+.site-map-map .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-map-map .container .text {
+    padding: 1rem;
+    margin: 2rem;
+    color: #CE4A33;
+    background-color: #f6f4f4;
+    border-radius: 5px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+}
+
+.site-map-map .container .text h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.site-map-map .container .text p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.site-map-map .container .image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    padding: 2rem;
+}
+
+.site-map-map .container .image img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+}
+
+.site-map-map .container a {
+    margin-bottom: 1rem;
+}
+
+/* RULES SECTION */
+
+.rules-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rules-header h2 {
+    color: #CE4A33;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    margin: 2rem 2rem 0;
+    font-size: 5rem;
+    letter-spacing: 5px;
+}
+
+.rules-header hr {
+    margin: 2rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+.rules-section .rules {
+    max-width: 500px;
+    background-color: #f6f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.08);
+    transition: .3s ease-in-out;
+    margin: 2rem;
+    color: #333;
+}
+
+.rules-section .rules li {
+    margin: .5rem 0;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 1rem;
+}
+
+/* SITE MAP PAGE RESPONSIVE DESIGN */
+
+/* @media (min-width: 865px) {
+    .site-map-map .container {
+        flex-direction: row;
+    }
+} */
 
 /* ATTRACTIONS PAGE */
 
@@ -973,10 +1091,101 @@ header h1 {
     align-items: center;
 }
 
-header h1 {
+.attractions-hero h1 {
     color: white;
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
     font-size: 5rem;
     letter-spacing: 5px;
 }
+
+/* ATTRACTIONS EMIQUON SECTION */
+
+.emiquon {
+    padding: 1rem;
+}
+
+.emiquon header {
+    color: #CE4A33;
+    margin: 2rem 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.emiquon header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.emiquon header hr {
+    margin: 1rem 0;
+    width: 8rem;
+    border: 3px solid #CE4A33;
+    border-radius: 5px;
+}
+
+
+.emiquon .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emiquon .container .text {
+    padding: 1rem;
+    color: #CE4A33;
+    background-color: #f6f4f4;
+    border-radius: 5px;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.emiquon .container .text h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.emiquon .container .text p {
+    font-size: 1.25rem;
+}
+
+.emiquon .container a {
+    margin-bottom: 2rem;
+}
+
+.emiquon .container .image {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-bottom: 1.5rem;
+}
+
+.emiquon .container .image figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emiquon .container .image figure figcaption {
+    color: #333;
+    font-size: .8rem;
+}
+
+.emiquon .container .image img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+}
+
+/* ATTRACTIONS RESPONSIVE DESIGN */
