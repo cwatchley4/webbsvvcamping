@@ -80,134 +80,118 @@
             Campground</a
           >
         </div>
-        <ul class="links">
-          <li><a href="/">Home</a></li>
-          <li><a href="rates">Rates & Reservations</a></li>
-          <li><a href="sitemap">Site Map & Policies</a></li>
-          <li><a href="attractions">Attractions</a></li>
-          <li>
-            <a
-              href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False"
-              target="_blank"
-              >Book Online</a
-            >
-          </li>
-        </ul>
-        <div class="toggle-btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-      <div class="dropdown-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="rates">Rates & Reservations</a></li>
-        <li><a href="sitemap">Site Map & Policies</a></li>
-        <li><a href="attractions">Attractions</a></li>
-        <li>
+        <div class="links">
+          <a href="/">Home</a>
+          <a href="rates">Rates & Reservations</a>
+          <a href="sitemap">Site Map & Policies</a>
+          <a href="attractions">Attractions</a>
+
           <a
             href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False"
             target="_blank"
             >Book Online</a
           >
-        </li>
-      </div>
-    </header>
-
-    <script>
-      const toggleBtn = document.querySelector(".toggle-btn");
-      const toggleBtnIcon = document.querySelector(".toggle-btn i");
-      const dropDownMenu = document.querySelector(".dropdown-menu");
-
-      toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
-
-        toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      };
-    </script>
-
-    <!-- HERO SECTION -->
-
-    <header class="sitemap-hero">
-      <h1>Site Map</h1>
-      <hr />
-    </header>
-
-    <!-- MAP SECTION -->
-
-    <section class="site-map-map">
-      <div class="container">
-        <div class="image">
-          <img src="images/site-map.JPG" alt="" />
         </div>
-        <div class="text">
-          <p>
-            Sites <b>labeled with A</b> have full water, sewer, and electric
-            hook ups.
-          </p>
-          <p>
-            Sites <b>labeled with B</b> have electric only. These are currently
-            not available due to renovations.
-          </p>
-          <p>
-            The <b>pavilion</b> is located in the middle section and is the
-            perfect shaded spot for lunch at a picnic table.
-          </p>
-          <p>
-            On the east end, you'll find our <b>community building</b> and
-            offices.
-          </p>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
         </div>
+      </nav>
+      <div class="dropdown-menu">
+        <a href="/">Home</a>
+        <a href="rates">Rates and Reservations</a>
+        <a href="sitemap">Site Map and Policies</a>
+        <a href="attractions">Attractions</a>
         <a
           href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False"
           target="_blank"
-          class="book-btn"
           >Book Online</a
         >
       </div>
-    </section>
+    </header>
 
-    <!-- RULES SECTION -->
+    <!-- HERO SECTION -->
+    <main>
+      <header class="sitemap-hero page-hero">
+        <h1>Site Map</h1>
+      </header>
 
-    <section class="rules-section">
-      <div class="rules-header">
-        <h2>Rules</h2>
-        <hr />
-      </div>
-      <div class="rules">
-        <h3>Rules</h3>
-        <ul>
-          <li>Quiet hours are from 9:00 pm to 7:00 am.</li>
-          <li>We reserve the right to refuse service to anyone.</li>
-          <li>
-            We do not guarantee the same site if you choose to extend. Check
-            with the reservation portal for possible extensions. If you need
-            help, feel free to call us or message us through the website.
-          </li>
-          <li>
-            While on the property, please put all cigarette butts and trash in
-            the proper container.
-          </li>
-          <li>
-            Webb's Valley View Campground is in no way liable for any loss or
-            damage by fire, wind, theft, accident or any other cause to the
-            personal possessions of tenant or their guests.
-          </li>
-          <li>
-            Place garbage in plastic bags, tie, and place in the dumpster by the
-            Morton building.
-          </li>
-          <li>No semi trucks.</li>
-          <li>
-            We reserve the right to refuse continued residency privileges to
-            “offenders” of campground rules.
-          </li>
-          <li>Guests are responsible for the actions of their visitors.</li>
-          <li>Owner reserves the right to change the rules without notice.</li>
-        </ul>
-      </div>
-    </section>
+      <!-- MAP SECTION -->
+
+      <section class="site-map-map">
+        <div class="container">
+          <div class="image">
+            <img src="images/site-map.JPG" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Sites <b>labeled with A</b> have full water, sewer, and electric
+              hook ups.
+            </p>
+            <p>
+              Sites <b>labeled with B</b> have electric only. These are
+              currently not available due to renovations.
+            </p>
+            <p>
+              The <b>pavilion</b> is located in the middle section and is the
+              perfect shaded spot for lunch at a picnic table.
+            </p>
+            <p>
+              On the east end, you'll find our <b>community building</b> and
+              offices.
+            </p>
+          </div>
+          <a
+            href="https://app.fireflyreservations.com/Reserve/Property/WebbsValleyViewCampground?holdExpired=False"
+            target="_blank"
+            class="book-btn"
+            >Book Online</a
+          >
+        </div>
+      </section>
+
+      <!-- RULES SECTION -->
+
+      <section class="rules-section">
+        <div class="rules-header">
+          <h2>Rules</h2>
+          <hr />
+        </div>
+        <div class="rules">
+          <h3>Rules</h3>
+          <ul>
+            <li>Quiet hours are from 9:00 pm to 7:00 am.</li>
+            <li>We reserve the right to refuse service to anyone.</li>
+            <li>
+              We do not guarantee the same site if you choose to extend. Check
+              with the reservation portal for possible extensions. If you need
+              help, feel free to call us or message us through the website.
+            </li>
+            <li>
+              While on the property, please put all cigarette butts and trash in
+              the proper container.
+            </li>
+            <li>
+              Webb's Valley View Campground is in no way liable for any loss or
+              damage by fire, wind, theft, accident or any other cause to the
+              personal possessions of tenant or their guests.
+            </li>
+            <li>
+              Place garbage in plastic bags, tie, and place in the dumpster by
+              the Morton building.
+            </li>
+            <li>No semi trucks.</li>
+            <li>
+              We reserve the right to refuse continued residency privileges to
+              “offenders” of campground rules.
+            </li>
+            <li>Guests are responsible for the actions of their visitors.</li>
+            <li>
+              Owner reserves the right to change the rules without notice.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <!-- FOOTER SECTION -->
 
@@ -248,4 +232,5 @@
       </p>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>

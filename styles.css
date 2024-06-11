@@ -67,22 +67,49 @@ body {
 /* Header Below */
 
 .header {
-  position: fixed;
+  position: absolute;
   padding: 0 2rem;
-  background-color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0)
+  );
   width: 100%;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   z-index: 5;
+  color: white;
+}
+
+.header.sticky {
+  position: fixed;
+  background: white;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header.sticky .info-bar a {
+  color: #333;
+}
+
+.header.sticky .navbar a {
+  color: #333;
+}
+
+.header.sticky hr {
+  border: solid 0.5px;
+  color: #333;
+}
+
+.header.sticky .navbar .toggle-btn {
+  color: #ce4a33;
 }
 
 .header hr {
   margin: 0.5rem 0;
+  border: none;
 }
 
 .header .info-bar {
   display: flex;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -90,7 +117,7 @@ body {
 }
 
 .header .info-bar a {
-  color: #333;
+  color: white;
   font-size: 0.8rem;
   font-weight: 700;
   text-align: right;
@@ -108,7 +135,6 @@ body {
 }
 
 .navbar {
-  max-width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -116,7 +142,7 @@ body {
 }
 
 .navbar a {
-  color: #333;
+  color: white;
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -161,7 +187,7 @@ body {
 }
 
 .navbar .toggle-btn {
-  color: #ce4a33;
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -187,11 +213,11 @@ body {
   z-index: 1;
 }
 
-.dropdown-menu li {
-  padding: 0.7rem;
+.dropdown-menu {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .dropdown-menu a {
@@ -213,9 +239,6 @@ body {
     color: #ce4a33;
   }
   .navbar .toggle-btn {
-    display: block;
-  }
-  .dropdown-menu {
     display: block;
   }
 }
@@ -245,7 +268,6 @@ body {
   text-align: center;
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
-  padding-top: 115.52px;
 }
 
 .hero #bgvideo {
@@ -841,17 +863,19 @@ footer .copyright a:hover {
 
 /* RATES HERO SECTION */
 
+.page-hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .rates-hero {
   background-image: url(images/sign.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
   background-position: center;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 115.52px;
 }
 
 header h1 {
@@ -955,33 +979,19 @@ header h1 {
 /* SITE MAP HERO SECTION */
 
 .sitemap-hero {
-  /* background-image: url(images/site-map.png);
-    background-size: cover;
-    background-color: rgba(0, 0, 0, .2);
-    background-blend-mode: darken;
-    background-position: center;
-    height: 50vh; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 115.52px;
+  background-image: url(images/fire-pit.jpg);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+  background-position: center;
 }
 
 .sitemap-hero h1 {
-  color: #ce4a33;
+  color: white;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  margin: 2rem 2rem 0;
   font-size: 5rem;
   letter-spacing: 5px;
-}
-
-.sitemap-hero hr {
-  margin: 2rem 0;
-  width: 8rem;
-  border: 3px solid #ce4a33;
-  border-radius: 5px;
 }
 
 /* SITE MAP MAP SECTION */
@@ -1105,11 +1115,6 @@ header h1 {
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
   background-position: top;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 115.52px;
 }
 
 .attractions-hero h1 {
