@@ -14,7 +14,6 @@ const pageHero = document.querySelector(".page-hero");
 const isOpen = dropDownMenu.classList.contains("open");
 
 const toggleMobileNavIcon = function () {
-  const isOpen = dropDownMenu.classList.contains("open");
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
 };
 
@@ -56,3 +55,11 @@ const heroObserver = new IntersectionObserver(stickyNav, {
 
 if (hero) heroObserver.observe(hero);
 if (pageHero) heroObserver.observe(pageHero);
+
+const dropdownObserver = new IntersectionObserver(closeMobileNav, {
+  root: null,
+  threshold: 0.5,
+});
+
+if (hero) dropdownObserver.observe(hero);
+if (pageHero) dropdownObserver.observe(pageHero);
